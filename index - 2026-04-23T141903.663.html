@@ -1,0 +1,3711 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+<meta name="theme-color" content="#FFFFFF" />
+<title>【韓国発・削らない審美歯科】MINISH ミニッシュ | 無料カウンセリング受付中</title>
+<meta name="description" content="韓国で20万件超の実績。健康な歯を削らずに、色・形・歯並びを整える審美歯科治療「MINISH」。日本語での渡韓サポート・帰国後フォローまで完備。まずは無料カウンセリングを。" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800;900&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+:root {
+  --white:    #FFFFFF;
+  --bg:       #FDFBF6;
+  --paper:    #F7F4EC;
+  --sand:     #EFE8D7;
+  --navy:     #0F1B2D;
+  --navy-2:   #1A2942;
+  --text:     #2B2F3A;
+  --mute:     #707480;
+  --line:     #E8E4D9;
+  --line-2:   #D4CFC0;
+  --gold:     #B8935A;
+  --gold-2:   #D4B483;
+  --gold-dark:#8E6F3E;
+
+  /* Japanese LP accent colors */
+  --pink:     #F2C7C2;     /* soft pink for beauty */
+  --pink-2:   #F8E3E0;
+  --pink-deep:#D88878;
+  --yellow:   #FFE570;     /* highlight yellow */
+  --yellow-2: rgba(255, 227, 90, 0.45);
+  --red:      #D9453C;     /* urgency red */
+  --cream:    #FFF8EC;
+
+  --font-en: "Inter", system-ui, sans-serif;
+  --font-jp: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+  --font-serif: "Noto Serif JP", serif;
+
+  --max: 1080px;
+  --max-narrow: 860px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-jp);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
+a { color: inherit; text-decoration: none; }
+input, select, textarea { font: inherit; color: inherit; }
+
+/* ============================================
+   UTILITIES
+   ============================================ */
+.highlight-yellow {
+  background: linear-gradient(transparent 62%, var(--yellow-2) 62%);
+  padding: 0 2px;
+}
+.underline-wavy {
+  background: linear-gradient(transparent calc(100% - 6px), var(--gold) calc(100% - 6px), var(--gold) calc(100% - 3px), transparent calc(100% - 3px));
+  padding: 0 2px 4px;
+}
+.red-text { color: var(--red); font-weight: 700; }
+.navy-text { color: var(--navy); font-weight: 700; }
+.gold-text { color: var(--gold); font-weight: 600; }
+
+/* Checkmark list */
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.check-list li {
+  position: relative;
+  padding-left: 30px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  background: var(--gold);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* Speech bubble */
+.bubble {
+  position: relative;
+  background: var(--white);
+  border: 2px solid var(--navy);
+  padding: 20px 24px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: var(--navy);
+}
+.bubble::before,
+.bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 32px;
+  border: 7px solid transparent;
+  border-top-color: var(--navy);
+}
+.bubble::after {
+  bottom: -11px;
+  border-top-color: var(--white);
+}
+
+/* Big section heading */
+.lp-section-title {
+  font-family: var(--font-jp);
+  font-weight: 800;
+  font-size: clamp(26px, 4.2vw, 40px);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy);
+  text-align: center;
+  margin: 0 0 16px;
+}
+.lp-section-title .small-en {
+  display: block;
+  font-family: var(--font-en);
+  font-weight: 600;
+  font-size: 0.32em;
+  letter-spacing: 0.35em;
+  color: var(--gold);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+.lp-section-title-deco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.lp-section-title-deco::before,
+.lp-section-title-deco::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: var(--gold);
+}
+.lp-section-title-deco span {
+  font-family: var(--font-en);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+}
+
+/* CTA Button - primary */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 22px 40px;
+  min-width: 320px;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+  color: var(--white);
+  font-family: var(--font-jp);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  border-radius: 999px;
+  box-shadow: 0 10px 30px -10px rgba(184,147,90,0.5);
+  transition: all .3s ease;
+  position: relative;
+  animation: ctaGlow 2.4s ease-in-out infinite;
+}
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px -12px rgba(184,147,90,0.6);
+}
+.cta-btn .small {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--cream);
+  margin-bottom: 4px;
+}
+.cta-btn .arrow { transition: transform .3s; font-size: 20px; font-weight: 300; }
+.cta-btn:hover .arrow { transform: translateX(4px); }
+
+@keyframes ctaGlow {
+  0%, 100% { box-shadow: 0 10px 30px -10px rgba(184,147,90,0.5); }
+  50%      { box-shadow: 0 14px 36px -10px rgba(184,147,90,0.7); }
+}
+
+.cta-btn.primary-navy {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
+  box-shadow: 0 10px 30px -10px rgba(15,27,45,0.5);
+  animation: none;
+}
+.cta-btn.primary-navy:hover { box-shadow: 0 16px 36px -12px rgba(15,27,45,0.6); }
+
+.cta-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin: 40px 0;
+}
+.cta-row .cta-caption {
+  font-family: var(--font-jp);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--red);
+  margin-bottom: 4px;
+}
+.cta-row .cta-caption::before,
+.cta-row .cta-caption::after {
+  content: "＼";
+  color: var(--red);
+  margin: 0 12px;
+  font-weight: 800;
+}
+.cta-row .cta-caption::after { content: "／"; }
+.cta-row .cta-note {
+  font-size: 11px;
+  color: var(--mute);
+  letter-spacing: 0.1em;
+}
+
+/* ============================================
+   REFERRER POPUP MODAL
+   ============================================ */
+.ref-popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  background: rgba(15, 27, 45, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+.ref-popup.visible {
+  display: flex;
+  opacity: 1;
+}
+.ref-popup-card {
+  background: var(--white);
+  border-radius: 22px;
+  max-width: 480px;
+  width: 100%;
+  overflow: hidden;
+  transform: translateY(20px) scale(.94);
+  transition: transform .45s cubic-bezier(.2,.7,.2,1);
+  box-shadow: 0 40px 80px -30px rgba(15,27,45,0.5);
+  position: relative;
+}
+.ref-popup.visible .ref-popup-card {
+  transform: translateY(0) scale(1);
+}
+.ref-popup-close {
+  position: absolute;
+  top: 14px; right: 14px;
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--mute);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .2s;
+  z-index: 2;
+}
+.ref-popup-close:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+.ref-popup-header {
+  padding: 40px 36px 26px;
+  text-align: center;
+  background: linear-gradient(180deg, var(--cream), var(--white));
+  border-bottom: 1px solid var(--line);
+}
+.ref-popup-header .icon {
+  width: 52px; height: 52px;
+  margin: 0 auto 16px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 10px 20px -8px rgba(184,147,90,0.5);
+}
+.ref-popup-header .eyebrow {
+  font-family: var(--font-en);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.ref-popup-header h3 {
+  font-family: var(--font-jp);
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--navy);
+  margin: 0 0 10px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.ref-popup-header p {
+  font-size: 13px;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.7;
+}
+.ref-popup-body {
+  padding: 28px 36px 10px;
+}
+.ref-popup-body label {
+  display: block;
+  font-family: var(--font-jp);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+.ref-popup-body select,
+.ref-popup-body input[type="text"] {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  color: var(--navy);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  outline: none;
+  transition: all .2s;
+}
+.ref-popup-body select:focus,
+.ref-popup-body input[type="text"]:focus {
+  border-color: var(--gold);
+  background: var(--white);
+}
+.ref-popup-body select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M1 1l4 4 4-4' stroke='%230F1B2D' fill='none' stroke-width='1.2'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 32px;
+  cursor: pointer;
+}
+.ref-popup-custom-wrap {
+  display: none;
+  margin-top: 14px;
+  animation: popupCustomFade .3s ease;
+}
+.ref-popup-custom-wrap.visible { display: block; }
+@keyframes popupCustomFade {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.ref-popup-actions {
+  padding: 20px 36px 32px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 12px;
+}
+.ref-popup-actions button {
+  padding: 16px;
+  font-family: var(--font-jp);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all .25s ease;
+  border: 0;
+}
+.ref-popup-actions .btn-skip {
+  background: transparent;
+  color: var(--mute);
+  border: 1px solid var(--line-2);
+}
+.ref-popup-actions .btn-skip:hover {
+  color: var(--navy);
+  border-color: var(--navy);
+}
+.ref-popup-actions .btn-submit {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+  color: var(--white);
+  box-shadow: 0 8px 20px -8px rgba(184,147,90,0.5);
+}
+.ref-popup-actions .btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -8px rgba(184,147,90,0.6);
+}
+.ref-popup-note {
+  font-size: 10.5px;
+  color: var(--mute);
+  text-align: center;
+  padding: 0 36px 20px;
+  line-height: 1.7;
+}
+
+body.popup-open { overflow: hidden; }
+
+/* ============================================
+   FORM SELF-REPORT REFERRER (fallback)
+   ============================================ */
+.referrer-self-report {
+  display: none;
+  margin-bottom: 36px;
+  padding: 24px 24px;
+  background: linear-gradient(135deg, var(--cream), var(--paper));
+  border: 1px dashed var(--gold);
+  border-radius: 12px;
+}
+.referrer-self-report.visible { display: block; }
+.referrer-self-report .rsr-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.referrer-self-report .rsr-head .icon {
+  width: 28px; height: 28px;
+  background: var(--gold);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.referrer-self-report .rsr-head h5 {
+  font-family: var(--font-jp);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--navy);
+  margin: 0;
+  letter-spacing: 0.03em;
+}
+.referrer-self-report p.rsr-desc {
+  font-size: 12px;
+  color: var(--text);
+  margin: 0 0 14px;
+  line-height: 1.7;
+}
+.referrer-self-report select,
+.referrer-self-report input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: var(--navy);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  outline: none;
+}
+.referrer-self-report select:focus,
+.referrer-self-report input[type="text"]:focus {
+  border-color: var(--gold);
+}
+.referrer-self-report select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M1 1l4 4 4-4' stroke='%230F1B2D' fill='none' stroke-width='1.2'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 30px;
+  cursor: pointer;
+}
+.rsr-custom-wrap {
+  display: none;
+  margin-top: 10px;
+}
+.rsr-custom-wrap.visible { display: block; }
+
+/* ============================================
+   REFERRER TOP STRIP (kept from v3)
+   ============================================ */
+.ref-strip {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 51;
+  background: linear-gradient(90deg, var(--navy) 0%, var(--navy-2) 50%, var(--navy) 100%);
+  color: var(--white);
+  padding: 10px 44px 10px 14px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid var(--gold);
+  animation: stripSlideDown .6s cubic-bezier(.2,.7,.2,1);
+}
+.ref-strip.visible { display: block; }
+.ref-strip .strip-label {
+  font-family: var(--font-en);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  margin-right: 10px;
+}
+.ref-strip .strip-clinic {
+  font-family: var(--font-jp);
+  font-weight: 600;
+  color: var(--white);
+}
+.ref-strip .strip-close {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px; height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.5);
+  font-size: 14px;
+  cursor: pointer;
+  transition: color .2s;
+}
+.ref-strip .strip-close:hover { color: var(--white); }
+@keyframes stripSlideDown {
+  from { transform: translateY(-100%); }
+  to   { transform: translateY(0); }
+}
+body.has-ref-strip .hero { padding-top: 38px; }
+
+/* ============================================
+   HERO (ファーストビュー)
+   ============================================ */
+.hero {
+  background:
+    radial-gradient(ellipse at 20% 10%, rgba(242,199,194,0.2), transparent 50%),
+    radial-gradient(ellipse at 90% 80%, rgba(184,147,90,0.08), transparent 50%),
+    var(--bg);
+  padding: 50px 20px 60px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Brand logo line */
+.hero-brandline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.hero-brandline img { height: 22px; filter: brightness(0); }
+.hero-brandline .divider { width: 1px; height: 16px; background: var(--line-2); }
+.hero-brandline .jp {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  color: var(--mute);
+}
+
+/* Referrer welcome card */
+.ref-welcome {
+  display: none;
+  margin: 0 auto 32px;
+  max-width: 720px;
+  padding: 18px 28px;
+  background: linear-gradient(135deg, rgba(184,147,90,0.08), rgba(242,199,194,0.12));
+  border: 2px solid var(--gold);
+  border-radius: 16px;
+  position: relative;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: center;
+  animation: welcomeFadeIn 1s cubic-bezier(.2,.7,.2,1) .3s both;
+}
+.ref-welcome.visible { display: grid; }
+.ref-welcome .rw-mark {
+  width: 48px; height: 48px;
+  background: var(--gold);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.ref-welcome .rw-eyebrow {
+  font-family: var(--font-en);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--gold-dark);
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+.ref-welcome .rw-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+  line-height: 1.5;
+}
+.ref-welcome .rw-title .clinic-name {
+  background: linear-gradient(transparent 62%, var(--yellow-2) 62%);
+  padding: 0 3px;
+}
+@keyframes welcomeFadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Trust bar */
+.trust-bar {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.trust-bar .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: 0.05em;
+}
+.trust-bar .badge::before {
+  content: "★";
+  color: var(--gold);
+  font-size: 13px;
+}
+
+/* Hero catchphrase */
+.hero-catch {
+  text-align: center;
+  font-family: var(--font-jp);
+  font-weight: 800;
+  color: var(--navy);
+  margin: 0 0 20px;
+  letter-spacing: 0.02em;
+}
+.hero-catch .line1 {
+  display: block;
+  font-size: clamp(20px, 3.2vw, 28px);
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--navy);
+}
+.hero-catch .line1 .circled {
+  display: inline-block;
+  background: var(--navy);
+  color: var(--white);
+  padding: 2px 14px;
+  border-radius: 999px;
+  font-size: 0.9em;
+  font-weight: 700;
+  margin: 0 6px;
+}
+.hero-catch .line2 {
+  display: block;
+  font-size: clamp(32px, 6vw, 58px);
+  font-weight: 900;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+}
+.hero-catch .line2 .accent {
+  color: var(--gold-dark);
+  position: relative;
+  display: inline-block;
+}
+.hero-catch .line2 .red-accent {
+  color: var(--red);
+}
+
+/* Hero sub */
+.hero-sub {
+  text-align: center;
+  font-size: 15px;
+  line-height: 2;
+  color: var(--text);
+  max-width: 640px;
+  margin: 30px auto 40px;
+}
+.hero-sub strong {
+  font-weight: 700;
+  color: var(--navy);
+}
+
+/* Hero visual row */
+.hero-visual {
+  position: relative;
+  max-width: 560px;
+  margin: 0 auto 30px;
+  aspect-ratio: 4/3;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.8), transparent 50%),
+    linear-gradient(160deg, var(--paper), var(--sand));
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-visual::before {
+  content: "✦";
+  position: absolute;
+  top: 20px; left: 20px;
+  font-size: 20px;
+  color: var(--gold);
+}
+.hero-visual .hv-note {
+  font-size: 12px;
+  color: var(--mute);
+  letter-spacing: 0.15em;
+  font-weight: 500;
+}
+.hero-visual .hv-stamp {
+  position: absolute;
+  top: 20px; right: 20px;
+  font-family: var(--font-en);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+}
+
+/* Hero stats strip */
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 30px auto 40px;
+  max-width: 760px;
+  padding: 24px 20px;
+  background: var(--navy);
+  border-radius: 16px;
+}
+.hero-stats .stat {
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.1);
+  padding: 0 10px;
+}
+.hero-stats .stat:last-child { border-right: 0; }
+.hero-stats .stat .num {
+  font-family: var(--font-en);
+  font-weight: 300;
+  font-size: clamp(24px, 3.5vw, 38px);
+  color: var(--gold-2);
+  line-height: 1;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+.hero-stats .stat .num sup {
+  font-size: 0.45em;
+  color: var(--gold-2);
+  margin-left: 2px;
+}
+.hero-stats .stat .label {
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.75);
+}
+
+/* ============================================
+   PROBLEM (こんなお悩みありませんか？)
+   ============================================ */
+.problem {
+  padding: 80px 20px;
+  background: var(--pink-2);
+  position: relative;
+  overflow: hidden;
+}
+.problem::before {
+  content: "";
+  position: absolute;
+  top: -40px; left: 50%;
+  transform: translateX(-50%);
+  width: 60px; height: 60px;
+  background: var(--pink-2);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+.problem-inner { max-width: var(--max); margin: 0 auto; }
+.problem-title {
+  text-align: center;
+  font-family: var(--font-jp);
+  font-weight: 800;
+  font-size: clamp(24px, 4vw, 36px);
+  color: var(--navy);
+  margin: 0 0 50px;
+  line-height: 1.5;
+}
+.problem-title .emph {
+  color: var(--pink-deep);
+  font-size: 1.15em;
+  position: relative;
+}
+.problem-title small {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--mute);
+  margin-top: 10px;
+  letter-spacing: 0.15em;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.problem-card {
+  position: relative;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 28px 24px 28px 80px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.6;
+  box-shadow: 0 8px 20px -8px rgba(15,27,45,0.12);
+}
+.problem-card::before {
+  content: attr(data-face);
+  position: absolute;
+  left: 18px; top: 50%;
+  transform: translateY(-50%);
+  width: 48px; height: 48px;
+  background: var(--pink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.problem-transition {
+  text-align: center;
+  margin-top: 40px;
+  padding: 40px 20px;
+  background: var(--white);
+  border-radius: 16px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.problem-transition .tag {
+  display: inline-block;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  padding: 4px 14px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+.problem-transition p {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+  line-height: 1.6;
+}
+.problem-transition p .highlight-yellow { font-size: 1.3em; }
+
+/* ============================================
+   SOLUTION TRANSITION BAND
+   ============================================ */
+.solution-band {
+  background: var(--navy);
+  color: var(--white);
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.solution-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 50%, rgba(184,147,90,0.15), transparent 60%);
+}
+.solution-band > * { position: relative; }
+.solution-band .pre {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--gold-2);
+  margin-bottom: 20px;
+}
+.solution-band .pre::before,
+.solution-band .pre::after {
+  content: "—"; margin: 0 14px; color: var(--gold);
+}
+.solution-band h2 {
+  font-family: var(--font-jp);
+  font-weight: 900;
+  font-size: clamp(32px, 6vw, 56px);
+  line-height: 1.3;
+  margin: 0 0 20px;
+  letter-spacing: 0.02em;
+}
+.solution-band h2 .gold {
+  color: var(--gold);
+  font-family: var(--font-en);
+  font-weight: 200;
+  letter-spacing: 0.02em;
+  font-size: 1.4em;
+  display: block;
+  margin-top: 10px;
+  line-height: 1;
+}
+.solution-band .tagline {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.9);
+  margin: 20px 0 40px;
+}
+
+/* ============================================
+   WHAT IS MINISH
+   ============================================ */
+.what-minish {
+  padding: 100px 20px;
+  background: var(--bg);
+}
+.what-minish-inner { max-width: var(--max); margin: 0 auto; }
+.what-intro-box {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 50px 40px;
+  box-shadow: 0 20px 50px -30px rgba(15,27,45,0.2);
+  border: 1px solid var(--line);
+}
+.what-intro-box .lead {
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 500;
+  color: var(--text);
+  text-align: center;
+  margin: 0 0 30px;
+}
+.what-intro-box .lead strong {
+  font-weight: 800;
+  color: var(--navy);
+}
+.what-features-mini {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+}
+.what-features-mini .item { text-align: center; }
+.what-features-mini .item .icon {
+  width: 56px; height: 56px;
+  margin: 0 auto 12px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+.what-features-mini .item h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 8px;
+  letter-spacing: 0.02em;
+}
+.what-features-mini .item p {
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0;
+}
+
+/* ============================================
+   REASONS (選ばれる5つの理由)
+   ============================================ */
+.reasons {
+  padding: 100px 20px;
+  background: var(--paper);
+}
+.reasons-inner { max-width: var(--max); margin: 0 auto; }
+.reasons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.reason-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 40px;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 14px 40px -24px rgba(15,27,45,0.2);
+  border: 1px solid var(--line);
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.reason-item::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 5px; height: 100%;
+  background: linear-gradient(180deg, var(--gold) 0%, var(--pink-deep) 100%);
+}
+.reason-num {
+  text-align: center;
+}
+.reason-num .label {
+  font-family: var(--font-en);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.reason-num .num {
+  font-family: var(--font-en);
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 0.9;
+  color: var(--navy);
+  letter-spacing: -0.04em;
+  position: relative;
+  display: inline-block;
+}
+.reason-num .num::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px; height: 3px;
+  background: var(--gold);
+}
+.reason-content h3 {
+  font-family: var(--font-jp);
+  font-weight: 800;
+  font-size: clamp(20px, 2.6vw, 26px);
+  color: var(--navy);
+  margin: 0 0 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.reason-content h3 .pop {
+  color: var(--pink-deep);
+}
+.reason-content p {
+  font-size: 14.5px;
+  line-height: 2;
+  color: var(--text);
+  margin: 0;
+}
+.reason-content .stat-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  background: var(--cream);
+  border: 1px solid var(--gold);
+  padding: 8px 16px;
+  border-radius: 999px;
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold-dark);
+  letter-spacing: 0.05em;
+}
+.reason-content .stat-chip .big {
+  font-family: var(--font-en);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--gold-dark);
+}
+
+/* ============================================
+   VS COMPARISON TABLE
+   ============================================ */
+.compare {
+  padding: 100px 20px;
+  background: var(--white);
+}
+.compare-inner { max-width: var(--max); margin: 0 auto; }
+.compare-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 40px;
+  border-radius: 16px;
+  box-shadow: 0 14px 40px -24px rgba(15,27,45,0.2);
+}
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  min-width: 760px;
+}
+.compare-table thead th {
+  padding: 20px 16px;
+  text-align: center;
+  background: var(--paper);
+  font-family: var(--font-jp);
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+.compare-table thead th.mine {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 800;
+  position: relative;
+}
+.compare-table thead th.mine::before {
+  content: "★ おすすめ";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--red);
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  padding: 4px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.compare-table tbody td {
+  padding: 18px 16px;
+  background: var(--white);
+  border-top: 1px solid var(--line);
+  text-align: center;
+  vertical-align: middle;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.compare-table tbody td.label {
+  text-align: left;
+  background: var(--cream);
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+.compare-table tbody td.mine {
+  background: rgba(184,147,90,0.05);
+  font-weight: 700;
+  color: var(--navy);
+}
+.compare-table .ok { color: var(--gold); font-size: 22px; font-weight: 700; }
+.compare-table .ng { color: var(--mute); opacity: 0.5; font-size: 18px; }
+.compare-table .triangle { color: var(--pink-deep); font-size: 20px; font-weight: 700; }
+
+/* ============================================
+   BEFORE / AFTER (症例)
+   ============================================ */
+.cases {
+  padding: 100px 20px;
+  background: var(--paper);
+}
+.cases-inner { max-width: var(--max); margin: 0 auto; }
+
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 40px 0;
+}
+.case-card {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 14px 40px -24px rgba(15,27,45,0.2);
+  transition: transform .3s ease;
+}
+.case-card:hover { transform: translateY(-4px); }
+.case-ba {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  aspect-ratio: 2/1;
+  gap: 2px;
+  background: var(--line);
+}
+.case-ba .ba-slot {
+  background-size: cover;
+  background-position: center;
+  background-color: var(--paper);
+  position: relative;
+  overflow: hidden;
+}
+.case-ba .ba-slot::before {
+  content: attr(data-label);
+  position: absolute;
+  top: 12px; left: 12px;
+  font-family: var(--font-en);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: var(--white);
+  background: var(--navy);
+  padding: 5px 12px;
+  border-radius: 4px;
+  z-index: 2;
+}
+.case-ba .ba-slot.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, var(--paper), var(--sand));
+}
+.case-ba .ba-slot.placeholder::after {
+  content: attr(data-placeholder);
+  font-family: var(--font-en);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--mute);
+  text-transform: uppercase;
+}
+.case-ba .ba-arrow {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 300;
+  box-shadow: 0 6px 16px rgba(15,27,45,0.2);
+}
+.case-meta { padding: 24px 24px 26px; }
+.case-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--gold-dark);
+  background: var(--cream);
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.case-meta h4 {
+  font-family: var(--font-jp);
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--navy);
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+.case-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.case-details .detail {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--navy);
+  background: var(--paper);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.case-meta p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--text);
+  margin: 0;
+}
+
+.cases-disclaimer {
+  margin-top: 30px;
+  padding: 20px 24px;
+  background: var(--cream);
+  border-left: 3px solid var(--gold);
+  font-size: 11.5px;
+  line-height: 1.9;
+  color: var(--text);
+  border-radius: 8px;
+}
+.cases-disclaimer strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 4px;
+  letter-spacing: 0.15em;
+}
+
+/* ============================================
+   PRODUCTS (治療メニュー)
+   ============================================ */
+.products {
+  padding: 100px 20px;
+  background: var(--white);
+}
+.products-inner { max-width: var(--max); margin: 0 auto; }
+.products-intro {
+  text-align: center;
+  font-size: 15px;
+  line-height: 2;
+  color: var(--text);
+  max-width: 640px;
+  margin: 0 auto 50px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.product-card {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 20px;
+  padding: 28px 28px 28px 20px;
+  background: var(--paper);
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  transition: all .3s ease;
+  align-items: center;
+}
+.product-card:hover {
+  border-color: var(--gold);
+  background: var(--white);
+  box-shadow: 0 14px 40px -24px rgba(15,27,45,0.2);
+}
+.product-card .pc-img {
+  aspect-ratio: 1;
+  background: var(--white);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  border: 1px solid var(--line);
+}
+.product-card .pc-img img { width: 100%; max-height: 100%; object-fit: contain; }
+.product-card .pc-tag {
+  display: inline-block;
+  font-family: var(--font-en);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.product-card h4 {
+  font-family: var(--font-jp);
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--navy);
+  margin: 0 0 8px;
+  letter-spacing: 0.02em;
+}
+.product-card .pc-desc {
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0 0 10px;
+}
+.product-card .pc-for {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gold-dark);
+  letter-spacing: 0.05em;
+}
+.product-card .pc-for::before {
+  content: "こんな方に ▶";
+  display: inline-block;
+  font-weight: 700;
+  color: var(--pink-deep);
+  margin-right: 6px;
+}
+
+/* ============================================
+   PRICING
+   ============================================ */
+.pricing {
+  padding: 100px 20px;
+  background: var(--paper);
+}
+.pricing-inner { max-width: var(--max-narrow); margin: 0 auto; }
+.pricing-intro {
+  text-align: center;
+  font-size: 15px;
+  line-height: 2;
+  color: var(--text);
+  max-width: 640px;
+  margin: 0 auto 50px;
+}
+.pricing-card {
+  background: var(--white);
+  border: 2px solid var(--gold);
+  border-radius: 20px;
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 14px 40px -24px rgba(184,147,90,0.3);
+  position: relative;
+}
+.pricing-card::before {
+  content: "料金の目安";
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  padding: 6px 22px;
+  border-radius: 999px;
+}
+.pricing-card .range {
+  font-family: var(--font-en);
+  font-weight: 300;
+  font-size: clamp(36px, 5vw, 52px);
+  color: var(--navy);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin: 20px 0 10px;
+}
+.pricing-card .range .unit {
+  font-family: var(--font-jp);
+  font-size: 0.35em;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 0 6px;
+}
+.pricing-card .range .per {
+  font-size: 0.4em;
+  color: var(--mute);
+  font-weight: 500;
+  margin-left: 6px;
+}
+.pricing-card .sub {
+  font-size: 13px;
+  color: var(--mute);
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+.pricing-card .included {
+  text-align: left;
+  max-width: 440px;
+  margin: 30px auto 0;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+.pricing-card .included h5 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--navy);
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+/* ============================================
+   VOICES (お客様の声)
+   ============================================ */
+.voices {
+  padding: 100px 20px;
+  background: var(--white);
+}
+.voices-inner { max-width: var(--max); margin: 0 auto; }
+.voices-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.voice-card {
+  position: relative;
+  padding: 30px 28px 28px;
+  background: var(--paper);
+  border-radius: 16px;
+  border: 1px solid var(--line);
+}
+.voice-card::before {
+  content: "❝";
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 60px;
+  color: var(--gold);
+  line-height: 1;
+  opacity: 0.3;
+  font-family: var(--font-serif);
+}
+.voice-card .voice-stars {
+  color: var(--gold);
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-bottom: 14px;
+}
+.voice-card .voice-title {
+  font-family: var(--font-jp);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--navy);
+  margin: 0 0 14px;
+  line-height: 1.6;
+}
+.voice-card .voice-body {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--text);
+  margin: 0 0 20px;
+}
+.voice-card .voice-person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.voice-card .voice-avatar {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, var(--pink), var(--gold-2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+}
+.voice-card .voice-info {
+  font-size: 12px;
+  color: var(--mute);
+  line-height: 1.5;
+}
+.voice-card .voice-info strong {
+  display: block;
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 13px;
+}
+.voices-note {
+  margin-top: 24px;
+  font-size: 11.5px;
+  color: var(--mute);
+  text-align: center;
+  font-style: italic;
+}
+
+/* ============================================
+   PROCESS (ご利用の流れ)
+   ============================================ */
+.process-lp {
+  padding: 100px 20px;
+  background: var(--paper);
+}
+.process-lp-inner { max-width: var(--max-narrow); margin: 0 auto; }
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  margin-top: 40px;
+}
+.process-steps::before {
+  content: "";
+  position: absolute;
+  top: 60px; bottom: 60px;
+  left: 44px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--gold) 0%, var(--pink-deep) 100%);
+}
+.process-step-lp {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 28px;
+  align-items: start;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 28px 28px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px -20px rgba(15,27,45,0.18);
+  position: relative;
+  z-index: 1;
+}
+.process-step-lp .ps-num {
+  width: 88px; height: 88px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 3px solid var(--gold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  flex-shrink: 0;
+}
+.process-step-lp .ps-num .big {
+  font-family: var(--font-en);
+  font-weight: 300;
+  font-size: 30px;
+  color: var(--gold);
+  line-height: 1;
+  margin-top: 2px;
+  letter-spacing: -0.02em;
+}
+.process-step-lp h4 {
+  font-family: var(--font-jp);
+  font-weight: 800;
+  font-size: 19px;
+  color: var(--navy);
+  margin: 4px 0 10px;
+  letter-spacing: 0.02em;
+}
+.process-step-lp h4 .en {
+  display: inline-block;
+  font-family: var(--font-en);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+  margin-left: 12px;
+}
+.process-step-lp p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--text);
+  margin: 0;
+}
+
+/* ============================================
+   Q & A
+   ============================================ */
+.qa {
+  padding: 100px 20px;
+  background: var(--white);
+}
+.qa-inner { max-width: var(--max-narrow); margin: 0 auto; }
+.qa-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.qa-item {
+  background: var(--paper);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  transition: border-color .2s;
+}
+.qa-item.open { border-color: var(--gold); }
+.qa-q {
+  width: 100%;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 44px 1fr 30px;
+  gap: 16px;
+  align-items: center;
+  padding: 22px 24px;
+  font-family: var(--font-jp);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--navy);
+  cursor: pointer;
+  line-height: 1.6;
+  background: transparent;
+  border: 0;
+}
+.qa-q .q-mark {
+  width: 36px; height: 36px;
+  background: var(--navy);
+  color: var(--white);
+  border-radius: 50%;
+  font-family: var(--font-en);
+  font-weight: 800;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qa-q .toggle {
+  font-family: var(--font-en);
+  font-weight: 300;
+  font-size: 22px;
+  color: var(--gold);
+  transition: transform .3s;
+  text-align: center;
+}
+.qa-item.open .qa-q .toggle { transform: rotate(45deg); }
+.qa-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s ease;
+}
+.qa-a > div {
+  padding: 0 24px 22px 84px;
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--text);
+}
+.qa-a > div strong { color: var(--navy); font-weight: 700; }
+
+/* ============================================
+   FINAL CTA
+   ============================================ */
+.final-cta {
+  padding: 100px 20px;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(184,147,90,0.15), transparent 50%),
+    radial-gradient(ellipse at 80% 50%, rgba(242,199,194,0.18), transparent 50%),
+    linear-gradient(180deg, var(--cream) 0%, var(--paper) 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.final-cta-inner { max-width: var(--max-narrow); margin: 0 auto; position: relative; }
+.final-cta h2 {
+  font-family: var(--font-jp);
+  font-weight: 900;
+  font-size: clamp(26px, 4vw, 40px);
+  color: var(--navy);
+  margin: 0 0 20px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+.final-cta h2 .emph {
+  background: linear-gradient(transparent 60%, var(--yellow-2) 60%);
+  padding: 0 3px;
+}
+.final-cta-desc {
+  font-size: 16px;
+  line-height: 2;
+  color: var(--text);
+  margin: 0 0 40px;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.final-cta-benefits {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.final-cta-benefit {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  background: var(--white);
+  border: 2px solid var(--gold);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+}
+.final-cta-benefit::before {
+  content: "✓";
+  width: 22px; height: 22px;
+  background: var(--gold);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* ============================================
+   FORM
+   ============================================ */
+.booking {
+  padding: 100px 20px;
+  background: var(--navy);
+  color: var(--white);
+}
+.booking-inner { max-width: var(--max-narrow); margin: 0 auto; }
+.booking-header { text-align: center; margin-bottom: 40px; }
+.booking-header .small-en {
+  color: var(--gold-2);
+}
+.booking-header h2 {
+  font-family: var(--font-jp);
+  font-weight: 800;
+  font-size: clamp(26px, 4vw, 36px);
+  color: var(--white);
+  margin: 10px 0 14px;
+  letter-spacing: 0.02em;
+}
+.booking-header p {
+  color: rgba(255,255,255,0.75);
+  font-size: 14px;
+  margin: 0;
+}
+.booking-form {
+  background: var(--white);
+  padding: 50px 40px;
+  border-radius: 20px;
+  color: var(--text);
+}
+.referrer-notice {
+  display: none;
+  margin-bottom: 36px;
+  padding: 20px 24px;
+  background: linear-gradient(90deg, rgba(184,147,90,0.1), transparent);
+  border-left: 3px solid var(--gold);
+  border-radius: 8px;
+}
+.referrer-notice.visible { display: block; }
+.referrer-notice .rn-label {
+  font-family: var(--font-en);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--gold-dark);
+  margin-bottom: 6px;
+}
+.referrer-notice .rn-text {
+  font-size: 14px;
+  color: var(--navy);
+  font-weight: 600;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+.form-field { display: flex; flex-direction: column; }
+.form-field.full { grid-column: 1 / -1; }
+.form-field label {
+  font-family: var(--font-jp);
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: var(--navy);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.form-field label .req {
+  background: var(--red);
+  color: var(--white);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 2px 7px;
+  margin-left: 8px;
+  border-radius: 3px;
+}
+.form-field input,
+.form-field select,
+.form-field textarea {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 14px 16px;
+  font-size: 15px;
+  color: var(--navy);
+  outline: none;
+  transition: all .2s;
+  width: 100%;
+  border-radius: 8px;
+}
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: var(--gold);
+  background: var(--white);
+}
+.form-field textarea { min-height: 110px; resize: vertical; line-height: 1.8; }
+.form-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M1 1l4 4 4-4' stroke='%230F1B2D' fill='none' stroke-width='1.2'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 32px;
+  cursor: pointer;
+}
+.consent {
+  margin-top: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--text);
+}
+.consent input {
+  margin-top: 4px;
+  accent-color: var(--gold);
+  width: 16px; height: 16px;
+}
+.consent a { color: var(--navy); border-bottom: 1px solid var(--mute); }
+.submit-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 22px;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+  color: var(--white);
+  font-family: var(--font-jp);
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  border-radius: 999px;
+  transition: all .3s ease;
+  cursor: pointer;
+  border: 0;
+  box-shadow: 0 10px 30px -10px rgba(184,147,90,0.5);
+}
+.submit-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 16px 40px -12px rgba(184,147,90,0.6); }
+.submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 60px 40px;
+  background: var(--white);
+  border: 2px solid var(--gold);
+  border-radius: 20px;
+  color: var(--text);
+}
+.form-success.visible { display: block; }
+.form-success .fs-mark {
+  display: inline-block;
+  width: 68px; height: 68px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--white);
+  font-size: 32px;
+  line-height: 68px;
+  margin-bottom: 24px;
+}
+.form-success h3 {
+  font-family: var(--font-jp);
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--navy);
+  margin: 0 0 20px;
+}
+.form-success p {
+  color: var(--text);
+  line-height: 2;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+  background: #0A0E1A;
+  color: rgba(255,255,255,0.7);
+  padding: 60px 20px 30px;
+}
+.footer-inner { max-width: var(--max); margin: 0 auto; text-align: center; }
+.footer-logo {
+  height: 26px;
+  margin: 0 auto 16px;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+.footer-desc {
+  max-width: 560px;
+  margin: 0 auto 30px;
+  font-size: 12px;
+  line-height: 1.9;
+  color: rgba(255,255,255,0.5);
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 12px;
+}
+.footer-links a:hover { color: var(--gold); }
+.footer-bottom {
+  padding-top: 24px;
+  font-family: var(--font-en);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: rgba(255,255,255,0.3);
+}
+
+/* ============================================
+   STICKY MOBILE CTA
+   ============================================ */
+.sticky-cta {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 40;
+  background: rgba(253,251,246,0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 12px 16px;
+  border-top: 1px solid var(--line);
+  box-shadow: 0 -10px 30px rgba(15,27,45,0.1);
+}
+.sticky-cta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+  color: var(--white);
+  border-radius: 999px;
+  font-family: var(--font-jp);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+/* ============================================
+   REVEAL ANIMATION
+   ============================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1);
+}
+.reveal.in { opacity: 1; transform: translateY(0); }
+
+/* ============================================
+   DEBUG
+   ============================================ */
+.debug-badge {
+  position: fixed;
+  bottom: 90px; left: 16px;
+  z-index: 100;
+  background: var(--navy);
+  color: var(--gold);
+  padding: 10px 16px;
+  font-family: ui-monospace, monospace;
+  font-size: 10px;
+  display: none;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+}
+.debug-badge.visible { display: block; }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 860px) {
+  .ref-popup { padding: 16px; }
+  .ref-popup-header { padding: 32px 24px 22px; }
+  .ref-popup-header h3 { font-size: 18px; }
+  .ref-popup-body { padding: 22px 24px 10px; }
+  .ref-popup-actions { padding: 16px 24px 24px; grid-template-columns: 1fr 1.4fr; gap: 10px; }
+  .ref-popup-actions button { padding: 14px; font-size: 13px; }
+  .ref-popup-note { padding: 0 24px 18px; }
+
+  .hero-stats { grid-template-columns: 1fr 1fr; gap: 20px 10px; padding: 20px 16px; }
+  .hero-stats .stat:nth-child(2) { border-right: 0; }
+  .hero-stats .stat:nth-child(-n+2) { border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 18px; }
+  .hero-stats .stat:nth-child(n+3) { padding-top: 18px; }
+
+  .problem-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .problem-card { padding: 20px 20px 20px 70px; font-size: 14px; }
+  .problem-card::before { width: 40px; height: 40px; font-size: 22px; left: 16px; }
+
+  .what-features-mini { grid-template-columns: 1fr; gap: 24px; }
+  .what-intro-box { padding: 36px 24px; }
+  .what-intro-box .lead { font-size: 16px; }
+
+  .reason-item {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px 24px;
+    text-align: center;
+  }
+  .reason-num .num { font-size: 80px; }
+  .reason-content { text-align: left; }
+
+  .cta-btn { min-width: 280px; padding: 20px 28px; font-size: 15px; }
+
+  .cases-grid { grid-template-columns: 1fr; gap: 20px; }
+  .products-grid { grid-template-columns: 1fr; }
+  .voices-grid { grid-template-columns: 1fr; gap: 16px; }
+  .process-steps::before { left: 34px; }
+  .process-step-lp { grid-template-columns: 68px 1fr; gap: 16px; padding: 22px 20px; }
+  .process-step-lp .ps-num { width: 68px; height: 68px; font-size: 9px; }
+  .process-step-lp .ps-num .big { font-size: 24px; }
+  .process-step-lp h4 { font-size: 16px; }
+  .process-step-lp h4 .en { display: block; margin: 4px 0 0; }
+
+  .qa-q { grid-template-columns: 36px 1fr 24px; gap: 12px; padding: 18px 20px; font-size: 14px; }
+  .qa-q .q-mark { width: 30px; height: 30px; font-size: 13px; }
+  .qa-a > div { padding: 0 20px 20px 68px; font-size: 13px; }
+
+  .pricing-card { padding: 50px 24px 40px; }
+  .pricing-card .range { font-size: 36px; }
+
+  .booking-form { padding: 36px 24px; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .form-row .form-field { margin-bottom: 24px; }
+
+  .final-cta-benefits { gap: 12px; }
+  .final-cta-benefit { padding: 10px 16px; font-size: 13px; }
+
+  .sticky-cta { display: block; }
+  body { padding-bottom: 80px; }
+  .debug-badge { bottom: 100px; }
+}
+
+@media (max-width: 500px) {
+  .problem-grid { grid-template-columns: 1fr; }
+  .compare-table { font-size: 12px; min-width: 560px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================================================
+     REFERRER TOP STRIP
+     ================================================ -->
+<div class="ref-strip" id="refStrip">
+  <span class="strip-label">REFERRED FROM</span>
+  <span class="strip-clinic" id="refStripClinic">—</span>
+  <span class="strip-close" id="refStripClose" title="閉じる">×</span>
+</div>
+
+<!-- ================================================
+     REFERRER POPUP (first-time visitors without ?ref)
+     ================================================ -->
+<div class="ref-popup" id="refPopup" role="dialog" aria-modal="true" aria-labelledby="refPopupTitle">
+  <div class="ref-popup-card">
+    <button class="ref-popup-close" id="refPopupClose" title="閉じる" aria-label="閉じる">×</button>
+
+    <div class="ref-popup-header">
+      <div class="icon">✦</div>
+      <div class="eyebrow">Welcome to MINISH Japan</div>
+      <h3 id="refPopupTitle">このページを、どちらで<br>知っていただきましたか？</h3>
+      <p>ご紹介元が分かると、よりスムーズにご案内できます。</p>
+    </div>
+
+    <div class="ref-popup-body">
+      <label for="refPopupSelect">ご紹介元・きっかけ</label>
+      <select id="refPopupSelect">
+        <option value="">選択してください</option>
+        <!-- Dynamic clinic options populated by JS -->
+        <option value="__OTHER__">その他のクリニック（自由入力）</option>
+        <option value="__WEB__">Web検索・SNSで見つけた</option>
+        <option value="__DIRECT__">紹介ではなく、自分で見つけた</option>
+      </select>
+
+      <div class="ref-popup-custom-wrap" id="refPopupCustomWrap">
+        <label for="refPopupCustom" style="margin-top:14px;">クリニック名（自由入力）</label>
+        <input type="text" id="refPopupCustom" placeholder="例：〇〇ビューティークリニック" />
+      </div>
+    </div>
+
+    <div class="ref-popup-actions">
+      <button type="button" class="btn-skip" id="refPopupSkip">スキップ</button>
+      <button type="button" class="btn-submit" id="refPopupSubmit">この内容で続ける →</button>
+    </div>
+
+    <p class="ref-popup-note">
+      ※ このページの閲覧に登録は必要ありません。後から問い合わせフォームでも入力可能です。
+    </p>
+  </div>
+</div>
+
+<!-- ================================================
+     HERO (ファーストビュー)
+     ================================================ -->
+<section class="hero">
+  <div class="hero-inner">
+
+    <!-- Brand logo -->
+    <div class="hero-brandline">
+      <img src="https://minishtech.com/wp-content/uploads/2025/10/Logo.svg" alt="MINISH" />
+      <div class="divider"></div>
+      <div class="jp">JAPAN PARTNER</div>
+    </div>
+
+    <!-- Referrer welcome card -->
+    <div class="ref-welcome" id="refWelcome">
+      <div class="rw-mark">✦</div>
+      <div>
+        <div class="rw-eyebrow">REFERRED PATIENT WELCOME</div>
+        <p class="rw-title">
+          <span class="clinic-name" id="refWelcomeClinic">—</span>様よりご紹介いただきました
+        </p>
+      </div>
+    </div>
+
+    <!-- Trust badges -->
+    <div class="trust-bar">
+      <span class="badge">韓国・江南 MINISH正規提携</span>
+      <span class="badge">累計20万件超の実績</span>
+      <span class="badge">日本語サポート完備</span>
+    </div>
+
+    <!-- Catchphrase -->
+    <h1 class="hero-catch">
+      <span class="line1">
+        <span class="circled">韓国で20万件超</span>の審美歯科
+      </span>
+      <span class="line2">
+        <span class="highlight-yellow">削らない、</span><br>
+        という<span class="accent">美しさ。</span>
+      </span>
+    </h1>
+
+    <p class="hero-sub">
+      <strong>ラミネートの1/10以下の切削量</strong>で、色・形・歯並びを整える<br>
+      韓国発の審美歯科ソリューション「<strong>MINISH（ミニッシュ）</strong>」。<br>
+      渡韓の手配から帰国後のフォローまで、すべて<strong class="red-text">日本語でサポート</strong>します。
+    </p>
+
+    <!-- Hero visual (placeholder) -->
+    <div class="hero-visual">
+      <span class="hv-stamp">SEOUL · GANGNAM</span>
+      <span class="hv-note">[ MINISH施術イメージ ]</span>
+    </div>
+
+    <!-- Hero stats -->
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="num">17<sup>年</sup></div>
+        <div class="label">治療ノウハウ</div>
+      </div>
+      <div class="stat">
+        <div class="num">20<sup>万+</sup></div>
+        <div class="label">累計治療ケース</div>
+      </div>
+      <div class="stat">
+        <div class="num">600<sup>+</sup></div>
+        <div class="label">著名人・モデル採用</div>
+      </div>
+      <div class="stat">
+        <div class="num">100<sup>+</sup></div>
+        <div class="label">歯科医師自身が選択</div>
+      </div>
+    </div>
+
+    <!-- Hero CTA -->
+    <div class="cta-row">
+      <span class="cta-caption">今なら無料カウンセリング受付中</span>
+      <a href="#booking" class="cta-btn">
+        <span>
+          <span class="small">まずは無料で</span>
+          無料カウンセリングを予約
+        </span>
+        <span class="arrow">→</span>
+      </a>
+      <span class="cta-note">所要時間 約3分 / 24時間以内にご連絡</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================
+     PROBLEM (こんなお悩みありませんか？)
+     ================================================ -->
+<section class="problem">
+  <div class="problem-inner">
+
+    <h2 class="problem-title reveal">
+      こんな<span class="emph">お悩み</span>、<br>
+      ありませんか？
+      <small>— Have any of these concerns? —</small>
+    </h2>
+
+    <div class="problem-grid">
+      <div class="problem-card reveal" data-face="😔">前歯の色が気になる。ホワイトニングでも満足できない。</div>
+      <div class="problem-card reveal" data-face="😟" style="transition-delay:.05s">自分の歯を削るのはどうしても避けたい。</div>
+      <div class="problem-card reveal" data-face="😕" style="transition-delay:.1s">矯正は時間がかかるし、装置をつけたくない。</div>
+      <div class="problem-card reveal" data-face="😐" style="transition-delay:.15s">前歯の形や大きさが不揃いで、笑顔に自信が持てない。</div>
+      <div class="problem-card reveal" data-face="🥺" style="transition-delay:.2s">古くなった詰め物・被せ物が変色・目立ってきた。</div>
+      <div class="problem-card reveal" data-face="😢" style="transition-delay:.25s">前歯のすきっ歯が気になる。でも矯正は大げさ……。</div>
+    </div>
+
+    <div class="problem-transition reveal">
+      <span class="tag">ご安心ください</span>
+      <p>
+        そのお悩み、<br>
+        <span class="highlight-yellow">ミニッシュなら解決できます。</span>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================
+     SOLUTION BAND
+     ================================================ -->
+<section class="solution-band">
+  <div class="pre">Solution</div>
+  <h2 class="reveal">
+    韓国で20万件超の実績。<br>
+    <span class="gold">MINISH</span>
+  </h2>
+  <p class="tagline reveal">自分の歯を、削らずに、美しく。</p>
+</section>
+
+<!-- ================================================
+     WHAT IS MINISH
+     ================================================ -->
+<section class="what-minish">
+  <div class="what-minish-inner">
+    <div class="reveal">
+      <h2 class="lp-section-title">
+        <span class="small-en">About MINISH</span>
+        ミニッシュとは？
+      </h2>
+      <div class="lp-section-title-deco"><span>INTRODUCTION</span></div>
+    </div>
+
+    <div class="what-intro-box reveal">
+      <p class="lead">
+        ミニッシュは、生体模倣理論に基づき、<br>
+        <strong>損傷した歯の機能と審美性を、元の自分の歯のように</strong><br>
+        健康的かつ自然に回復させる、歯の修復ソリューションです。
+      </p>
+
+      <div class="what-features-mini">
+        <div class="item">
+          <div class="icon">01</div>
+          <h4>超精密加工技術</h4>
+          <p>損傷部位に合わせたオーダーメイドの修復物で精密結合。</p>
+        </div>
+        <div class="item">
+          <div class="icon">02</div>
+          <h4>エナメル質接着</h4>
+          <p>化学的に一体化。天然歯とほぼ同等の結合力を実現。</p>
+        </div>
+        <div class="item">
+          <div class="icon">03</div>
+          <h4>VITA共同開発素材</h4>
+          <p>ドイツVITA社と共同開発した、自然歯に最も近い素材。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     REASONS (選ばれる5つの理由)
+     ================================================ -->
+<section class="reasons">
+  <div class="reasons-inner">
+    <div class="reveal">
+      <h2 class="lp-section-title">
+        <span class="small-en">Why Chosen</span>
+        ミニッシュが<br class="mobile-only">選ばれる<span class="gold-text">5つの理由</span>
+      </h2>
+      <div class="lp-section-title-deco"><span>5 REASONS</span></div>
+    </div>
+
+    <div class="reasons-list">
+
+      <div class="reason-item reveal">
+        <div class="reason-num">
+          <div class="label">REASON</div>
+          <div class="num">01</div>
+        </div>
+        <div class="reason-content">
+          <h3>健康な歯を<span class="pop">ほとんど削らない</span>から、歯を守れる。</h3>
+          <p>
+            従来のクラウン治療と比べて<span class="navy-text">切削量は約1/10</span>。健康な歯のエナメル質を最大限に残しながら、色・形・歯並びを整えます。「自分の歯を削りたくない」という方に最適な治療法です。
+          </p>
+          <span class="stat-chip">切削量 <span class="big">1/10</span> 以下（従来比）</span>
+        </div>
+      </div>
+
+      <div class="reason-item reveal">
+        <div class="reason-num">
+          <div class="label">REASON</div>
+          <div class="num">02</div>
+        </div>
+        <div class="reason-content">
+          <h3>韓国で<span class="pop">20万件超</span>の臨床実績。信頼の蓄積。</h3>
+          <p>
+            ミニッシュ歯科病院では17年以上にわたり、20万件を超える症例を治療。韓国の著名人・モデルも600名以上が採用するなど、口コミで広がり続けている審美歯科のスタンダードです。
+          </p>
+          <span class="stat-chip">累計 <span class="big">200,000</span> 件超</span>
+        </div>
+      </div>
+
+      <div class="reason-item reveal">
+        <div class="reason-num">
+          <div class="label">REASON</div>
+          <div class="num">03</div>
+        </div>
+        <div class="reason-content">
+          <h3>矯正せずに、<span class="pop">一日で歯並び</span>まで整えられる。</h3>
+          <p>
+            ミニッシュ・ハーモニーなら、矯正装置を使わずに歯並びを改善。通常6ヶ月以上かかる矯正と違い、<span class="navy-text">1日で仕上がる</span>ので、痛みや日常生活の不便もありません。
+          </p>
+          <span class="stat-chip">歯並び改善 <span class="big">1日</span> で完結</span>
+        </div>
+      </div>
+
+      <div class="reason-item reveal">
+        <div class="reason-num">
+          <div class="label">REASON</div>
+          <div class="num">04</div>
+        </div>
+        <div class="reason-content">
+          <h3>自然歯に最も近い<span class="pop">VITA素材</span>で、違和感なし。</h3>
+          <p>
+            100年の伝統を持つドイツの歯科材料企業VITAと共同開発した第2世代ミニッシュブロックを独占使用。自然歯の透明感・弾力性・摩耗度を再現し、長期安定の仕上がりです。
+          </p>
+          <span class="stat-chip">ドイツ <span class="big">VITA社</span> と共同開発</span>
+        </div>
+      </div>
+
+      <div class="reason-item reveal">
+        <div class="reason-num">
+          <div class="label">REASON</div>
+          <div class="num">05</div>
+        </div>
+        <div class="reason-content">
+          <h3>渡韓も帰国後も、<span class="pop">日本語で</span>丁寧にサポート。</h3>
+          <p>
+            カウンセリング・渡韓手配・現地通訳・帰国後のフォローまで、すべて日本語で対応します。初めての韓国治療でも、日本国内のクリニックと同じ感覚でお任せいただけます。
+          </p>
+          <span class="stat-chip">24時間以内に日本語でご連絡</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cta-row" style="margin-top: 50px;">
+      <span class="cta-caption">ご相談は無料です</span>
+      <a href="#booking" class="cta-btn">
+        <span>無料カウンセリングを予約する</span>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     COMPARISON TABLE
+     ================================================ -->
+<section class="compare">
+  <div class="compare-inner">
+    <div class="reveal">
+      <h2 class="lp-section-title">
+        <span class="small-en">Comparison</span>
+        他の審美治療との<br class="mobile-only">比較
+      </h2>
+      <div class="lp-section-title-deco"><span>VS</span></div>
+    </div>
+
+    <p style="text-align:center; font-size:15px; line-height:2; color:var(--text); max-width:640px; margin:0 auto 20px;">
+      主要な審美歯科治療とミニッシュを比較すると、<br>
+      その違いがはっきりと見えてきます。
+    </p>
+
+    <div class="compare-wrap reveal">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="mine">ミニッシュ</th>
+            <th>ラミネート</th>
+            <th>セラミック<br>クラウン</th>
+            <th>ホワイトニング</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="label">切削量</td>
+            <td class="mine">極少量 <span class="ok">◎</span></td>
+            <td>中程度</td>
+            <td>大（神経処置あり）</td>
+            <td>なし</td>
+          </tr>
+          <tr>
+            <td class="label">色調改善</td>
+            <td class="mine"><span class="ok">◎</span></td>
+            <td><span class="ok">○</span></td>
+            <td><span class="ok">○</span></td>
+            <td><span class="triangle">△</span></td>
+          </tr>
+          <tr>
+            <td class="label">形・隙間の改善</td>
+            <td class="mine"><span class="ok">◎</span></td>
+            <td><span class="ok">○</span></td>
+            <td><span class="ok">○</span></td>
+            <td class="ng"><span class="ng">×</span></td>
+          </tr>
+          <tr>
+            <td class="label">歯並びの改善</td>
+            <td class="mine"><span class="ok">◎</span></td>
+            <td><span class="triangle">△</span></td>
+            <td><span class="ok">○</span></td>
+            <td class="ng"><span class="ng">×</span></td>
+          </tr>
+          <tr>
+            <td class="label">耐久性</td>
+            <td class="mine">高い <span class="ok">◎</span></td>
+            <td>中</td>
+            <td>高い</td>
+            <td class="ng">低（要再施術）</td>
+          </tr>
+          <tr>
+            <td class="label">再治療時の歯の負担</td>
+            <td class="mine">小さい <span class="ok">◎</span></td>
+            <td>中</td>
+            <td class="ng">大きい</td>
+            <td>なし</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="text-align:center; font-size:12px; color:var(--mute); margin-top:16px;">
+      ※ 比較は一般論であり、個別の症例により適した治療法は異なります。詳しくはカウンセリング時にご説明いたします。
+    </p>
+  </div>
+</section>
+
+<!-- ================================================
+     CASES (Before / After)
+     ================================================ -->
+<section class="cases">
+  <div class="cases-inner">
+    <div class="reveal">
+      <h2 class="lp-section-title">
+        <span class="small-en">Before / After</span>
+        症例ギャラリー
+      </h2>
+      <div class="lp-section-title-deco"><span>GALLERY</span></div>
+    </div>
+
+    <p style="text-align:center; font-size:15px; line-height:2; color:var(--text); max-width:640px; margin:0 auto 20px;">
+      MINISH歯科病院で実際に施術を受けた患者様の症例です。<br>
+      一人ひとりの悩みに合わせた、オーダーメイドの結果をご覧ください。
+    </p>
+
+    <div class="cases-grid reveal">
+      <div class="case-card">
+        <div class="case-ba">
+          <div class="ba-slot placeholder" data-label="Before" data-placeholder="[ Before ]"></div>
+          <div class="ba-slot placeholder" data-label="After"  data-placeholder="[ After ]"></div>
+          <div class="ba-arrow">→</div>
+        </div>
+        <div class="case-meta">
+          <span class="case-tag">MINISH · Vera</span>
+          <h4>前歯の色と形を整えた症例</h4>
+          <div class="case-details">
+            <span class="detail">30代女性</span>
+            <span class="detail">前歯4本</span>
+            <span class="detail">来院3回</span>
+          </div>
+          <p>前歯の色ムラと形の不揃いを改善。削る量を最小限に抑えながら、自然な白さを実現。</p>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-ba">
+          <div class="ba-slot placeholder" data-label="Before" data-placeholder="[ Before ]"></div>
+          <div class="ba-slot placeholder" data-label="After"  data-placeholder="[ After ]"></div>
+          <div class="ba-arrow">→</div>
+        </div>
+        <div class="case-meta">
+          <span class="case-tag">MINISH · Harmony</span>
+          <h4>すきっ歯を改善した症例</h4>
+          <div class="case-details">
+            <span class="detail">20代女性</span>
+            <span class="detail">前歯6本</span>
+            <span class="detail">1日完結</span>
+          </div>
+          <p>矯正不要で、隙間のあった前歯を一日で整列。装置の煩わしさなく審美性も改善。</p>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-ba">
+          <div class="ba-slot placeholder" data-label="Before" data-placeholder="[ Before ]"></div>
+          <div class="ba-slot placeholder" data-label="After"  data-placeholder="[ After ]"></div>
+          <div class="ba-arrow">→</div>
+        </div>
+        <div class="case-meta">
+          <span class="case-tag">MINISH · Vera</span>
+          <h4>前歯8本のトータル改善</h4>
+          <div class="case-details">
+            <span class="detail">40代女性</span>
+            <span class="detail">前歯8本</span>
+            <span class="detail">来院4回</span>
+          </div>
+          <p>色・形・長さのバランスを包括的に改善。顔全体の印象が明るくなる仕上がり。</p>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-ba">
+          <div class="ba-slot placeholder" data-label="Before" data-placeholder="[ Before ]"></div>
+          <div class="ba-slot placeholder" data-label="After"  data-placeholder="[ After ]"></div>
+          <div class="ba-arrow">→</div>
+        </div>
+        <div class="case-meta">
+          <span class="case-tag">MINISH · Ever</span>
+          <h4>加齢による変色・摩耗を改善</h4>
+          <div class="case-details">
+            <span class="detail">50代男性</span>
+            <span class="detail">前歯6本</span>
+            <span class="detail">来院3回</span>
+          </div>
+          <p>長年の摩耗と変色を一新。機能と審美性を同時に回復し、若々しい印象へ。</p>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-ba">
+          <div class="ba-slot placeholder" data-label="Before" data-placeholder="[ Before ]"></div>
+          <div class="ba-slot placeholder" data-label="After"  data-placeholder="[ After ]"></div>
+          <div class="ba-arrow">→</div>
+        </div>
+        <div class="case-meta">
+          <span class="case-tag">MINISH · Lamidy</span>
+          <h4>古い補綴物を再生した症例</h4>
+          <div class="case-details">
+            <span class="detail">40代女性</span>
+            <span class="detail">前歯4本</span>
+            <span class="detail">来院3回</span>
+          </div>
+          <p>変色・破折していた既存の補綴物を除去し、支台歯ごと修復・再生。</p>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-ba">
+          <div class="ba-slot placeholder" data-label="Before" data-placeholder="[ Before ]"></div>
+          <div class="ba-slot placeholder" data-label="After"  data-placeholder="[ After ]"></div>
+          <div class="ba-arrow">→</div>
+        </div>
+        <div class="case-meta">
+          <span class="case-tag">MINISH · Vera</span>
+          <h4>フル前歯10本の包括治療</h4>
+          <div class="case-details">
+            <span class="detail">30代女性</span>
+            <span class="detail">前歯10本</span>
+            <span class="detail">来院5回</span>
+          </div>
+          <p>上下前歯すべてを包括的に治療。人目を引く自然な笑顔を手に入れた症例。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cases-disclaimer">
+      <strong>注意事項 ／ DISCLAIMER</strong>
+      掲載しているBefore/After写真は、MINISH歯科病院にて実際に施術を受けた患者様の同意のもとに掲載しています。治療効果には個人差があり、すべての方に同様の結果を保証するものではありません。施術には、しみる・痛みを感じる・違和感などのリスクが伴う場合があります。MINISH治療は自由診療（保険適用外）です。
+    </div>
+
+    <div class="cta-row" style="margin-top: 50px;">
+      <span class="cta-caption">あなたの症例も診断します</span>
+      <a href="#booking" class="cta-btn">
+        <span>
+          <span class="small">お口の写真を送るだけ</span>
+          無料で症例診断を受ける
+        </span>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     PRODUCTS (治療メニュー)
+     ================================================ -->
+<section class="products">
+  <div class="products-inner">
+    <div class="reveal">
+      <h2 class="lp-section-title">
+        <span class="small-en">Product Lineup</span>
+        あなたに合った<br class="mobile-only">治療メニュー
+      </h2>
+      <div class="lp-section-title-deco"><span>4 PRODUCTS</span></div>
+    </div>
+
+    <p class="products-intro">
+      目的・年齢・症状に応じて、最適なミニッシュをご用意しています。<br>
+      どの商品が適しているかは、カウンセリング時に診断のうえご提案します。
+    </p>
+
+    <div class="products-grid">
+      <div class="product-card reveal">
+        <div class="pc-img">
+          <img src="https://minishtech.com/wp-content/uploads/2025/04/prod_img_01.png" alt="MINISH Vera" />
+        </div>
+        <div>
+          <span class="pc-tag">Minish Vera</span>
+          <h4>ミニッシュベラ</h4>
+          <p class="pc-desc">審美性に特化。削らずに色・形・質感を精密に改善する、最も人気の基本プラン。</p>
+          <p class="pc-for">前歯の見た目を整えたい20〜40代の方</p>
+        </div>
+      </div>
+
+      <div class="product-card reveal" style="transition-delay:.05s">
+        <div class="pc-img">
+          <img src="https://minishtech.com/wp-content/uploads/2025/04/prod_img_02.png" alt="MINISH Ever" />
+        </div>
+        <div>
+          <span class="pc-tag">Minish Ever</span>
+          <h4>ミニッシュエバー</h4>
+          <p class="pc-desc">加齢による変色・摩耗・長さを一気に改善する、歯のアンチエイジング商品。</p>
+          <p class="pc-for">歯の老化が気になる中高年の方</p>
+        </div>
+      </div>
+
+      <div class="product-card reveal" style="transition-delay:.1s">
+        <div class="pc-img">
+          <img src="https://minishtech.com/wp-content/uploads/2025/04/prod_img_03.png" alt="MINISH Harmony" />
+        </div>
+        <div>
+          <span class="pc-tag">Minish Harmony</span>
+          <h4>ミニッシュハーモニー</h4>
+          <p class="pc-desc">矯正装置なしで歯並びを整える、1日完結の審美矯正ソリューション。</p>
+          <p class="pc-for">すきっ歯・八重歯などでお悩みの方</p>
+        </div>
+      </div>
+
+      <div class="product-card reveal" style="transition-delay:.15s">
+        <div class="pc-img">
+          <img src="https://minishtech.com/wp-content/uploads/2025/04/prod_img_04.png" alt="MINISH Lamidy" />
+        </div>
+        <div>
+          <span class="pc-tag">Minish Lamidy</span>
+          <h4>ミニッシュラミディ</h4>
+          <p class="pc-desc">古い補綴物を支台歯ごと再生する、補綴物の再治療プラン。</p>
+          <p class="pc-for">古い詰め物・被せ物を綺麗にしたい方</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     PRICING
+     ================================================ -->
+<section class="pricing">
+  <div class="pricing-inner">
+    <div class="reveal">
+      <h2 class="lp-section-title">
+        <span class="small-en">Pricing</span>
+        料金について
+      </h2>
+      <div class="lp-section-title-deco"><span>COST</span></div>
+    </div>
+
+    <p class="pricing-intro">
+      治療本数・症例により費用は変動します。<br>
+      以下はあくまで目安で、正確なお見積もりはカウンセリング後にご提示いたします。
+    </p>
+
+    <div class="pricing-card reveal">
+      <div class="range">
+        <span class="unit">¥</span>— <span class="unit">〜</span>
+        <span class="per">/ 1本あたり</span>
+      </div>
+      <p class="sub">
+        ※ 現在、価格レンジはMINISH本部と調整中です。<br>
+        カウンセリング時に詳しい料金をご案内いたします。
+      </p>
+
+      <div class="included">
+        <h5>▼ 料金に含まれるもの</h5>
+        <ul class="check-list">
+          <li>ミニッシュ施術料金（本数分）</li>
+          <li>日本語による事前・事後カウンセリング</li>
+          <li>渡韓時の日本語通訳同席</li>
+          <li>帰国後3〜6ヶ月のオンラインフォロー</li>
+        </ul>
+      </div>
+
+      <p style="font-size:11.5px; color:var(--mute); margin-top:24px; padding-top:20px; border-top:1px solid var(--line);">
+        ※ 航空券・宿泊費・現地交通費はお客様負担となります。<br>
+        ※ ミニッシュは自由診療のため、日本の健康保険は適用されません。<br>
+        ※ 医療費控除の対象となる場合があります。領収書を発行いたします。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     VOICES (お客様の声)
+     ================================================ -->
+<section class="voices">
+  <div class="voices-inner">
+    <div class="reveal">
+      <h2 class="lp-section-title">
+        <span class="small-en">Customer Voices</span>
+        お客様の声
+      </h2>
+      <div class="lp-section-title-deco"><span>REVIEWS</span></div>
+    </div>
+
+    <div class="voices-grid">
+      <div class="voice-card reveal">
+        <div class="voice-stars">★★★★★</div>
+        <h4 class="voice-title">ホワイトニングで満足できなかった色が、自然な白さに。</h4>
+        <p class="voice-body">
+          長年ホワイトニングを続けていましたが、どうしても理想の白さにならず……。ミニッシュに出会って、削る量が本当に少ないことに驚きました。仕上がりも自然で、「歯を替えた感」がないのが嬉しいです。
+        </p>
+        <div class="voice-person">
+          <div class="voice-avatar">S</div>
+          <div class="voice-info">
+            <strong>S.K 様</strong>
+            30代女性 / 前歯6本
+          </div>
+        </div>
+      </div>
+
+      <div class="voice-card reveal" style="transition-delay:.1s">
+        <div class="voice-stars">★★★★★</div>
+        <h4 class="voice-title">矯正を諦めていた歯並びが、一日で整いました。</h4>
+        <p class="voice-body">
+          矯正は2〜3年かかると言われて、仕事との両立を考えると諦めていました。ミニッシュハーモニーは一日で終わって、装置もなし。仕上がりを見た瞬間、本当にやって良かったと思いました。
+        </p>
+        <div class="voice-person">
+          <div class="voice-avatar">M</div>
+          <div class="voice-info">
+            <strong>M.T 様</strong>
+            20代女性 / 前歯8本
+          </div>
+        </div>
+      </div>
+
+      <div class="voice-card reveal" style="transition-delay:.2s">
+        <div class="voice-stars">★★★★★</div>
+        <h4 class="voice-title">渡韓も不安でしたが、全て日本語対応で安心でした。</h4>
+        <p class="voice-body">
+          韓国は初めてで正直不安でしたが、航空券・ホテルの案内から現地での通訳まですべて日本語で、本当に安心して任せられました。帰国後も定期的にチェックしてもらえて、フォロー体制も万全です。
+        </p>
+        <div class="voice-person">
+          <div class="voice-avatar">Y</div>
+          <div class="voice-info">
+            <strong>Y.H 様</strong>
+            40代男性 / 前歯6本
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="voices-note">※ 個人の感想であり、効果・結果を保証するものではありません。掲載は患者様の同意を得た上で行っています。</p>
+
+    <div class="cta-row" style="margin-top: 50px;">
+      <span class="cta-caption">あなたも一歩踏み出してみませんか？</span>
+      <a href="#booking" class="cta-btn">
+        <span>無料カウンセリングを予約する</span>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     PROCESS (ご利用の流れ)
+     ================================================ -->
+<section class="process-lp" id="process">
+  <div class="process-lp-inner">
+    <div class="reveal">
+      <h2 class="lp-section-title">
+        <span class="small-en">Process</span>
+        ご予約から<br class="mobile-only">治療完了までの流れ
+      </h2>
+      <div class="lp-section-title-deco"><span>5 STEPS</span></div>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step-lp reveal">
+        <div class="ps-num">STEP<br><span class="big">1</span></div>
+        <div>
+          <h4>カウンセリング予約<span class="en">BOOKING</span></h4>
+          <p>本ページのフォーム or LINEから、お悩み・ご希望時期をお送りください。24時間以内に日本語担当者よりご連絡いたします。<strong class="red-text">完全無料</strong>で、無理な勧誘は一切ありません。</p>
+        </div>
+      </div>
+
+      <div class="process-step-lp reveal">
+        <div class="ps-num">STEP<br><span class="big">2</span></div>
+        <div>
+          <h4>オンライン事前診断<span class="en">ONLINE CONSULT</span></h4>
+          <p>お口の写真をお送りいただき、治療範囲・本数・概算費用・渡韓日程をご提案します。4つのMINISH商品のうちどれが最適かも診断いたします。</p>
+        </div>
+      </div>
+
+      <div class="process-step-lp reveal">
+        <div class="ps-num">STEP<br><span class="big">3</span></div>
+        <div>
+          <h4>渡韓準備<span class="en">PREPARATION</span></h4>
+          <p>航空券・ホテル手配のご案内、空港からのアクセス、滞在中スケジュールをまとめた日本語マニュアルをお渡しします。必要に応じて送迎手配も可能です。</p>
+        </div>
+      </div>
+
+      <div class="process-step-lp reveal">
+        <div class="ps-num">STEP<br><span class="big">4</span></div>
+        <div>
+          <h4>MINISHで施術<span class="en">TREATMENT</span></h4>
+          <p>ソウル・江南のMINISH歯科病院にて施術完了。日本語通訳が全工程に同席します。一般的に<strong>2〜4日間の滞在</strong>で完結するスケジュールです。</p>
+        </div>
+      </div>
+
+      <div class="process-step-lp reveal">
+        <div class="ps-num">STEP<br><span class="big">5</span></div>
+        <div>
+          <h4>帰国後フォロー<span class="en">AFTER CARE</span></h4>
+          <p>帰国後も定期的なオンラインチェックで状態を確認。必要に応じて日本国内の提携歯科医院でのメンテナンスもご案内可能です。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     Q & A
+     ================================================ -->
+<section class="qa">
+  <div class="qa-inner">
+    <div class="reveal">
+      <h2 class="lp-section-title">
+        <span class="small-en">FAQ</span>
+        よくあるご質問
+      </h2>
+      <div class="lp-section-title-deco"><span>Q & A</span></div>
+    </div>
+
+    <div class="qa-list">
+
+      <div class="qa-item">
+        <button class="qa-q">
+          <span class="q-mark">Q</span>
+          <span>施術中の痛みはありますか？</span>
+          <span class="toggle">+</span>
+        </button>
+        <div class="qa-a"><div>
+          歯を削る量が極めて少ないため、多くの場合は<strong>麻酔なしまたはごく軽度の麻酔</strong>で施術可能です。痛みに敏感な方はご相談のうえ調整いたします。
+        </div></div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-q">
+          <span class="q-mark">Q</span>
+          <span>韓国での滞在日数はどれくらい必要ですか？</span>
+          <span class="toggle">+</span>
+        </button>
+        <div class="qa-a"><div>
+          治療本数にもよりますが、一般的には<strong>2泊3日〜3泊4日</strong>で施術が完了します。カウンセリング時に最適な滞在プランをご提案いたします。
+        </div></div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-q">
+          <span class="q-mark">Q</span>
+          <span>韓国語ができませんが、大丈夫ですか？</span>
+          <span class="toggle">+</span>
+        </button>
+        <div class="qa-a"><div>
+          <strong>ご安心ください。</strong>事前カウンセリングから現地での通訳、帰国後のフォローまで、すべて日本語で対応いたします。一切韓国語は必要ありません。
+        </div></div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-q">
+          <span class="q-mark">Q</span>
+          <span>施術後のメンテナンスは必要ですか？</span>
+          <span class="toggle">+</span>
+        </button>
+        <div class="qa-a"><div>
+          通常の歯と同じく、日々のブラッシングと定期健診でのケアを推奨しています。帰国後は<strong>日本国内の提携医院</strong>でもメンテナンスをお受けいただけます。
+        </div></div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-q">
+          <span class="q-mark">Q</span>
+          <span>日本の健康保険は使えますか？</span>
+          <span class="toggle">+</span>
+        </button>
+        <div class="qa-a"><div>
+          MINISHは自由診療のため、日本の健康保険は適用されません。ただし<strong>医療費控除の対象</strong>となる場合がありますので、領収書を発行いたします。
+        </div></div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-q">
+          <span class="q-mark">Q</span>
+          <span>施術後にトラブルがあったらどうすれば？</span>
+          <span class="toggle">+</span>
+        </button>
+        <div class="qa-a"><div>
+          帰国後に気になる症状があった場合、まずはLINEでご連絡ください。必要に応じて<strong>日本国内の提携医院</strong>での確認、または再渡韓時の対応を調整いたします。
+        </div></div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-q">
+          <span class="q-mark">Q</span>
+          <span>カウンセリング後に断ることはできますか？</span>
+          <span class="toggle">+</span>
+        </button>
+        <div class="qa-a"><div>
+          <strong>もちろん可能です。</strong>カウンセリングは完全無料、かつ無理な勧誘は一切いたしません。ご納得いただいた上でご判断ください。
+        </div></div>
+      </div>
+
+      <div class="qa-item">
+        <button class="qa-q">
+          <span class="q-mark">Q</span>
+          <span>治療はどれくらい長持ちしますか？</span>
+          <span class="toggle">+</span>
+        </button>
+        <div class="qa-a"><div>
+          ミニッシュは長期安定性に定評があり、適切なメンテナンスのもと<strong>10年以上使用している方も多数</strong>いらっしゃいます。定期的なチェックで状態を確認していきます。
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     FINAL CTA
+     ================================================ -->
+<section class="final-cta">
+  <div class="final-cta-inner">
+    <div class="reveal">
+      <h2>
+        あなたの歯の悩み、<br>
+        <span class="emph">ミニッシュで解決しませんか？</span>
+      </h2>
+      <p class="final-cta-desc">
+        まずは無料カウンセリングで、あなたの悩みをお聞かせください。<br>
+        最適なプランと概算費用を、<strong>24時間以内にご提案</strong>いたします。
+      </p>
+
+      <div class="final-cta-benefits">
+        <span class="final-cta-benefit">カウンセリング完全無料</span>
+        <span class="final-cta-benefit">24時間以内にご連絡</span>
+        <span class="final-cta-benefit">無理な勧誘一切なし</span>
+      </div>
+
+      <div class="cta-row">
+        <span class="cta-caption">所要時間 約3分</span>
+        <a href="#booking" class="cta-btn">
+          <span>
+            <span class="small">まずは無料で</span>
+            無料カウンセリングを予約
+          </span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     BOOKING FORM
+     ================================================ -->
+<section class="booking" id="booking">
+  <div class="booking-inner">
+    <div class="booking-header reveal">
+      <div class="lp-section-title" style="color:var(--white);">
+        <span class="small-en">Free Consultation</span>
+        お問い合わせフォーム
+      </div>
+    </div>
+
+    <div class="booking-form reveal" id="formContainer">
+      <div class="referrer-notice" id="referrerNotice">
+        <div class="rn-label">REFERRED FROM</div>
+        <div class="rn-text" id="referrerName">—</div>
+      </div>
+
+      <!-- Self-report fallback: shown when no referrer detected -->
+      <div class="referrer-self-report" id="refSelfReport">
+        <div class="rsr-head">
+          <div class="icon">?</div>
+          <h5>ご紹介元・このページを知ったきっかけ（任意）</h5>
+        </div>
+        <p class="rsr-desc">
+          ご紹介いただいたクリニックがあればご選択ください。より丁寧にご案内いたします。
+        </p>
+        <select id="refSelfSelect">
+          <option value="">選択してください</option>
+          <!-- Dynamic clinic options populated by JS -->
+          <option value="__OTHER__">その他のクリニック（自由入力）</option>
+          <option value="__WEB__">Web検索・SNSで見つけた</option>
+          <option value="__DIRECT__">紹介ではなく、自分で見つけた</option>
+        </select>
+        <div class="rsr-custom-wrap" id="refSelfCustomWrap">
+          <input type="text" id="refSelfCustom" placeholder="クリニック名をご入力ください" />
+        </div>
+      </div>
+
+      <form id="bookingForm" autocomplete="on">
+        <div class="form-row">
+          <div class="form-field">
+            <label>お名前<span class="req">必須</span></label>
+            <input type="text" name="name" required placeholder="山田 花子" />
+          </div>
+          <div class="form-field">
+            <label>フリガナ<span class="req">必須</span></label>
+            <input type="text" name="kana" required placeholder="ヤマダ ハナコ" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label>メールアドレス<span class="req">必須</span></label>
+            <input type="email" name="email" required placeholder="example@mail.com" />
+          </div>
+          <div class="form-field">
+            <label>電話番号<span class="req">必須</span></label>
+            <input type="tel" name="phone" required placeholder="090-0000-0000" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label>年代<span class="req">必須</span></label>
+            <select name="age_group" required>
+              <option value="">選択してください</option>
+              <option>20代</option>
+              <option>30代</option>
+              <option>40代</option>
+              <option>50代</option>
+              <option>60代以上</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label>渡韓希望時期<span class="req">必須</span></label>
+            <select name="preferred_timing" required>
+              <option value="">選択してください</option>
+              <option>1ヶ月以内</option>
+              <option>1〜3ヶ月以内</option>
+              <option>3〜6ヶ月以内</option>
+              <option>半年以上先</option>
+              <option>まだ未定 / 情報収集中</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label>興味のある商品</label>
+            <select name="interested_product">
+              <option value="">どれでも可</option>
+              <option>ミニッシュベラ（審美重視）</option>
+              <option>ミニッシュエバー（アンチエイジング）</option>
+              <option>ミニッシュハーモニー（歯並び改善）</option>
+              <option>ミニッシュラミディ（補綴物再治療）</option>
+              <option>まだわからない</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label>ご希望の連絡方法<span class="req">必須</span></label>
+            <select name="contact_method" required>
+              <option value="">選択してください</option>
+              <option>LINE</option>
+              <option>メール</option>
+              <option>電話</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field full">
+            <label>ご相談内容・気になる症状</label>
+            <textarea name="message" placeholder="例：前歯4本の色と形が気になっています。自然な白さを希望しています。"></textarea>
+          </div>
+        </div>
+
+        <div class="consent">
+          <input type="checkbox" id="consent" required />
+          <label for="consent">
+            <a href="#" target="_blank">プライバシーポリシー</a>に同意のうえ送信します。MINISH Japan Partner および提携クリニックからのご案内を受け取ります。
+          </label>
+        </div>
+
+        <input type="hidden" name="referrer_id" id="ref_id" value="" />
+        <input type="hidden" name="referrer_source" id="ref_src" value="" />
+        <input type="hidden" name="referrer_version" id="ref_ver" value="" />
+        <input type="hidden" name="landed_at" id="ref_landed" value="" />
+        <input type="hidden" name="submitted_at" id="ref_submitted" value="" />
+
+        <button type="submit" class="submit-btn" id="submitBtn">
+          この内容で無料カウンセリングを予約する →
+        </button>
+      </form>
+    </div>
+
+    <div class="form-success" id="formSuccess">
+      <div class="fs-mark">✓</div>
+      <h3>送信完了しました</h3>
+      <p>
+        お問い合わせありがとうございます。<br>
+        24時間以内に日本語担当者よりご連絡いたします。<br>
+        しばらくお待ちくださいませ。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     FOOTER
+     ================================================ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <img class="footer-logo" src="https://minishtech.com/wp-content/uploads/2025/10/Logo.svg" alt="MINISH" />
+    <p class="footer-desc">
+      韓国・江南のMINISH歯科病院と提携し、日本から訪韓される方へ日本語でのカウンセリング・渡韓サポートを提供しています。©MINISH Technology Inc. は韓国の登録商標です。
+    </p>
+    <div class="footer-links">
+      <a href="#booking">無料カウンセリング</a>
+      <a href="https://minishtech.com/ja/" target="_blank">本社公式サイト</a>
+      <a href="#">プライバシーポリシー</a>
+      <a href="#">特定商取引法に基づく表記</a>
+    </div>
+    <div class="footer-bottom">© 2025 MINISH JAPAN PARTNER · SEOUL · TOKYO · OSAKA</div>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<a href="#booking" class="sticky-cta-wrap">
+  <div class="sticky-cta">
+    <a href="#booking">
+      <span>▶</span> 無料カウンセリングを予約
+    </a>
+  </div>
+</a>
+
+<div class="debug-badge" id="debug"></div>
+
+<script>
+// ========================================
+// Clinic Referral Map
+// ========================================
+const CLINICS = {
+  'CLINIC001': { name: '銀座ビューティークリニック', area: 'Tokyo · Ginza' },
+  'CLINIC002': { name: '表参道スキンクリニック',     area: 'Tokyo · Omotesando' },
+  'OSAKA001':  { name: '心斎橋メディカルビューティー', area: 'Osaka · Shinsaibashi' },
+  'VANDS001':  { name: 'Vands Clinic 大阪院',      area: 'Osaka · Umeda' },
+};
+
+function resolveClinic(refId) {
+  if (!refId) return null;
+  if (CLINICS[refId]) return CLINICS[refId];
+  return { name: 'パートナークリニック', area: '', _fallback: true };
+}
+
+// ========================================
+// Populate clinic dropdowns (popup + form)
+// ========================================
+function populateClinicSelect(selectEl, options) {
+  options = options || {};
+  // Keep first (placeholder) option and last 3 special options; insert clinics before them
+  // Strategy: iterate CLINICS object, build <option>s, insert after placeholder
+  const clinicOptions = Object.keys(CLINICS).map(id => {
+    const c = CLINICS[id];
+    return '<option value="' + id + '">' + c.name + '（' + c.area + '）</option>';
+  }).join('');
+
+  // Find the __OTHER__ option to inject before it
+  const firstOption = selectEl.querySelector('option[value=""]');
+  const separatorHtml = '<option disabled>──── パートナークリニック ────</option>';
+  const specialSeparatorHtml = '<option disabled>──── その他 ────</option>';
+
+  // Remove existing clinic entries (they have no special value prefix)
+  Array.from(selectEl.querySelectorAll('option')).forEach(opt => {
+    if (opt.value && !opt.value.startsWith('__') && opt.value !== '' && !CLINICS[opt.value]) return;
+    // Keep special/placeholder options
+  });
+
+  // Build the full option list cleanly
+  selectEl.innerHTML = '<option value="">選択してください</option>' +
+    separatorHtml +
+    clinicOptions +
+    specialSeparatorHtml +
+    '<option value="__OTHER__">その他のクリニック（自由入力）</option>' +
+    '<option value="__WEB__">Web検索・SNSで見つけた</option>' +
+    '<option value="__DIRECT__">紹介ではなく、自分で見つけた</option>';
+}
+
+// ========================================
+// Shared: apply referrer data to UI
+// ========================================
+function applyReferrerToUI(stored) {
+  if (!stored.ref) return;
+
+  // Fill hidden form fields
+  document.getElementById('ref_id').value = stored.ref;
+  document.getElementById('ref_src').value = stored.src || '';
+  document.getElementById('ref_ver').value = stored.ver || '';
+  document.getElementById('ref_landed').value = stored.landed_at || '';
+
+  const clinic = resolveClinic(stored.ref);
+
+  // Is this a "positive referral" (known clinic or self-reported clinic)?
+  // Special values (__OTHER__, __WEB__, __DIRECT__) don't show the welcome banners.
+  const isSpecial = stored.ref && stored.ref.startsWith('__');
+
+  // TOP STRIP
+  const DISMISS_KEY = 'minish_strip_dismissed';
+  const dismissed = sessionStorage.getItem(DISMISS_KEY) === '1';
+  if (!isSpecial && !dismissed) {
+    const strip = document.getElementById('refStrip');
+    let stripText = clinic.name;
+    // If self-reported custom name exists, use that
+    if (stored.self_custom_name) stripText = stored.self_custom_name;
+    if (clinic._fallback && !stored.self_custom_name) stripText += ' (' + stored.ref + ')';
+    document.getElementById('refStripClinic').textContent = stripText + ' 様よりご紹介';
+    strip.classList.add('visible');
+    document.body.classList.add('has-ref-strip');
+  }
+
+  // WELCOME CARD
+  if (!isSpecial) {
+    const welcome = document.getElementById('refWelcome');
+    let welcomeText = clinic.name;
+    if (stored.self_custom_name) welcomeText = stored.self_custom_name;
+    document.getElementById('refWelcomeClinic').textContent = welcomeText;
+    welcome.classList.add('visible');
+  }
+
+  // FORM NOTICE
+  if (!isSpecial) {
+    const notice = document.getElementById('referrerNotice');
+    const name = document.getElementById('referrerName');
+    let noticeText = clinic.name;
+    if (stored.self_custom_name) noticeText = stored.self_custom_name + '（自己申告）';
+    else noticeText = clinic.name + '（ID: ' + stored.ref + '）';
+    name.textContent = noticeText + ' 様よりご紹介';
+    notice.classList.add('visible');
+    // Hide self-report form since referrer is known
+    document.getElementById('refSelfReport').classList.remove('visible');
+  } else {
+    // Special value: don't show as positive referral, show self-report in form pre-selected
+    document.getElementById('refSelfReport').classList.add('visible');
+    const sel = document.getElementById('refSelfSelect');
+    if (sel) sel.value = stored.ref;
+  }
+}
+
+// ========================================
+// Referrer Popup
+// ========================================
+function initReferrerPopup() {
+  const popup = document.getElementById('refPopup');
+  const closeBtn = document.getElementById('refPopupClose');
+  const skipBtn = document.getElementById('refPopupSkip');
+  const submitBtn = document.getElementById('refPopupSubmit');
+  const select = document.getElementById('refPopupSelect');
+  const customWrap = document.getElementById('refPopupCustomWrap');
+  const customInput = document.getElementById('refPopupCustom');
+
+  populateClinicSelect(select);
+
+  // Show/hide custom input based on selection
+  select.addEventListener('change', () => {
+    if (select.value === '__OTHER__') {
+      customWrap.classList.add('visible');
+      setTimeout(() => customInput.focus(), 100);
+    } else {
+      customWrap.classList.remove('visible');
+    }
+  });
+
+  function closePopup(markDismissed) {
+    popup.classList.remove('visible');
+    document.body.classList.remove('popup-open');
+    if (markDismissed) {
+      sessionStorage.setItem('minish_popup_dismissed', '1');
+    }
+  }
+
+  closeBtn.addEventListener('click', () => closePopup(true));
+  skipBtn.addEventListener('click', () => {
+    // Also show the form self-report field for fallback later
+    document.getElementById('refSelfReport').classList.add('visible');
+    closePopup(true);
+  });
+
+  // Close on overlay click (but not on card click)
+  popup.addEventListener('click', (e) => {
+    if (e.target === popup) {
+      document.getElementById('refSelfReport').classList.add('visible');
+      closePopup(true);
+    }
+  });
+  // Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && popup.classList.contains('visible')) {
+      document.getElementById('refSelfReport').classList.add('visible');
+      closePopup(true);
+    }
+  });
+
+  submitBtn.addEventListener('click', () => {
+    const val = select.value;
+    if (!val) {
+      select.focus();
+      select.style.borderColor = 'var(--red)';
+      setTimeout(() => { select.style.borderColor = ''; }, 1200);
+      return;
+    }
+
+    let refId = val;
+    let customName = null;
+
+    if (val === '__OTHER__') {
+      const typed = (customInput.value || '').trim();
+      if (!typed) {
+        customInput.focus();
+        customInput.style.borderColor = 'var(--red)';
+        setTimeout(() => { customInput.style.borderColor = ''; }, 1200);
+        return;
+      }
+      customName = typed;
+      refId = '__OTHER__';
+    }
+
+    // Save to sessionStorage
+    const stored = {
+      ref: refId,
+      src: 'popup_self_report',
+      ver: '',
+      landed_at: new Date().toISOString(),
+      self_reported: true,
+      self_custom_name: customName,
+    };
+    sessionStorage.setItem('minish_tracking', JSON.stringify(stored));
+
+    // Apply to UI
+    applyReferrerToUI(stored);
+
+    closePopup(true);
+  });
+}
+
+// ========================================
+// Form self-report field (fallback)
+// ========================================
+function initFormSelfReport() {
+  const select = document.getElementById('refSelfSelect');
+  const customWrap = document.getElementById('refSelfCustomWrap');
+  const customInput = document.getElementById('refSelfCustom');
+
+  populateClinicSelect(select);
+
+  select.addEventListener('change', () => {
+    if (select.value === '__OTHER__') {
+      customWrap.classList.add('visible');
+      setTimeout(() => customInput.focus(), 100);
+    } else {
+      customWrap.classList.remove('visible');
+    }
+
+    // Sync to hidden form fields so it's captured on submit
+    if (select.value && select.value !== '__OTHER__') {
+      document.getElementById('ref_id').value = select.value;
+      document.getElementById('ref_src').value = 'form_self_report';
+    } else if (select.value === '__OTHER__') {
+      document.getElementById('ref_id').value = '__OTHER__';
+      document.getElementById('ref_src').value = 'form_self_report_other';
+    }
+  });
+
+  customInput.addEventListener('input', () => {
+    // Store typed custom name in a hidden-like way: we'll include it in submission
+    document.getElementById('ref_src').value = 'form_self_report_other:' + customInput.value;
+  });
+}
+
+// ========================================
+// Main: run on page load
+// ========================================
+(function() {
+  const params = new URLSearchParams(location.search);
+  const ref = params.get('ref');
+  const src = params.get('src');
+  const ver = params.get('v');
+
+  const KEY = 'minish_tracking';
+  let stored = {};
+  try { stored = JSON.parse(sessionStorage.getItem(KEY) || '{}'); } catch(e){}
+
+  // URL params take priority
+  if (ref) {
+    stored = {
+      ref: ref,
+      src: src || '',
+      ver: ver || '',
+      landed_at: new Date().toISOString(),
+    };
+    sessionStorage.setItem(KEY, JSON.stringify(stored));
+  }
+
+  // Initialize popup + form self-report (always, so UI is ready)
+  initReferrerPopup();
+  initFormSelfReport();
+
+  if (stored.ref) {
+    // Known referrer — apply to UI
+    applyReferrerToUI(stored);
+  } else {
+    // No referrer — show popup unless user has already dismissed it this session
+    const popupDismissed = sessionStorage.getItem('minish_popup_dismissed') === '1';
+    if (!popupDismissed) {
+      // Small delay so the page has time to render
+      setTimeout(() => {
+        const popup = document.getElementById('refPopup');
+        popup.classList.add('visible');
+        document.body.classList.add('popup-open');
+      }, 1200);
+    } else {
+      // Show form self-report field since no referrer and popup was dismissed
+      document.getElementById('refSelfReport').classList.add('visible');
+    }
+  }
+
+  // Debug
+  if (params.get('debug') === '1') {
+    const dbg = document.getElementById('debug');
+    const clinic = stored.ref ? resolveClinic(stored.ref) : null;
+    dbg.textContent = 'ref=' + (stored.ref || '—') +
+                      ' / clinic=' + (clinic ? clinic.name : '—') +
+                      ' / src=' + (stored.src || '—') +
+                      ' / v=' + (stored.ver || '—');
+    dbg.classList.add('visible');
+  }
+
+  // Strip close handler (binds regardless of whether strip is currently shown)
+  const stripCloseBtn = document.getElementById('refStripClose');
+  if (stripCloseBtn) {
+    stripCloseBtn.addEventListener('click', () => {
+      document.getElementById('refStrip').classList.remove('visible');
+      document.body.classList.remove('has-ref-strip');
+      sessionStorage.setItem('minish_strip_dismissed', '1');
+    });
+  }
+})();
+
+// ========================================
+// Reveal on scroll
+// ========================================
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// ========================================
+// Q&A Accordion
+// ========================================
+document.querySelectorAll('.qa-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.qa-item');
+    const answer = item.querySelector('.qa-a');
+    const isOpen = item.classList.toggle('open');
+    answer.style.maxHeight = isOpen ? answer.scrollHeight + 'px' : '0';
+  });
+});
+
+// ========================================
+// Form submission
+// ========================================
+const form = document.getElementById('bookingForm');
+const successEl = document.getElementById('formSuccess');
+const formContainer = document.getElementById('formContainer');
+const submitBtn = document.getElementById('submitBtn');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  submitBtn.disabled = true;
+  submitBtn.textContent = '送信中...';
+
+  document.getElementById('ref_submitted').value = new Date().toISOString();
+
+  const data = Object.fromEntries(new FormData(form).entries());
+
+  // Include self-reported clinic info if user entered it via the fallback form field
+  const selfSelect = document.getElementById('refSelfSelect');
+  const selfCustom = document.getElementById('refSelfCustom');
+  if (selfSelect && selfSelect.value) {
+    data.referrer_self_select = selfSelect.value;
+    if (selfSelect.value === '__OTHER__' && selfCustom && selfCustom.value.trim()) {
+      data.referrer_self_custom_name = selfCustom.value.trim();
+    }
+  }
+
+  // Also pull any popup-entered custom name from sessionStorage
+  try {
+    const stored = JSON.parse(sessionStorage.getItem('minish_tracking') || '{}');
+    if (stored.self_custom_name) {
+      data.referrer_popup_custom_name = stored.self_custom_name;
+    }
+    if (stored.self_reported) {
+      data.referrer_self_reported = 'true';
+    }
+  } catch(e) {}
+
+  // TODO: Replace with actual backend endpoint
+  console.log('[MINISH] form submit payload:', data);
+
+  await new Promise(r => setTimeout(r, 1200));
+
+  formContainer.style.display = 'none';
+  successEl.classList.add('visible');
+  window.scrollTo({ top: successEl.offsetTop - 60, behavior: 'smooth' });
+});
+
+// ========================================
+// Hide mobile-only spans on desktop
+// ========================================
+(function(){
+  const mobileClass = window.matchMedia('(min-width: 861px)').matches ? 'mobile-hide' : 'mobile-show';
+  document.querySelectorAll('.mobile-only').forEach(el => {
+    if (window.matchMedia('(min-width: 861px)').matches) el.style.display = 'none';
+  });
+})();
+</script>
+</body>
+</html>
